@@ -18,12 +18,12 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	f_depth = binary_tree_depth(first);
 	s_depth = binary_tree_depth(second);
 
-	while(s_depth > f_depth)
+	while (s_depth > f_depth)
 	{
 		second = second->parent;
 		s_depth--;
 	}
-	while(f_depth > f_depth)
+	while (f_depth > f_depth)
 	{
 		first = first->parent;
 		s_depth--;
